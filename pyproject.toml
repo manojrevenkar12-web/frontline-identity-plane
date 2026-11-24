@@ -1,0 +1,38 @@
+[project]
+name = "frontline-identity-plane"
+version = "1.0.0"
+description = "Identity and access for a multi-tenant manufacturing platform: SAML, OIDC, SCIM 2.0, agent token exchange, shared stations."
+requires-python = ">=3.12"
+authors = [{ name = "Manoj Kumar Prakash", email = "manojrevenkar12@gmail.com" }]
+license = { text = "MIT" }
+dependencies = ["cryptography>=42", "lxml>=5", "numpy>=1.26", "pyyaml>=6", "fastapi>=0.110", "uvicorn>=0.29", "httpx>=0.27", "python-multipart>=0.0.9"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6", "mypy>=1.10", "types-PyYAML", "lxml-stubs"]
+
+[project.scripts]
+fip = "fip.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 200
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "W"]
+ignore = ["E501", "B023", "B008"]  # B008: the defaults are frozen dataclasses
+
+[tool.mypy]
+python_version = "3.12"
+ignore_missing_imports = true
+warn_unused_ignores = false

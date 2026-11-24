@@ -1,0 +1,51 @@
+# The designs compared on the same customers, HR events, attacks and shop-floor days.
+# `kind` picks how access is provisioned (src/fip/sim/designs.py); `set` overrides config/platform.yml.
+designs:
+  status_quo:
+    label: Provisioning as documented today (users-only SCIM, Viewer on first login, roles by ticket, a standing API key for automations)
+    kind: status_quo
+  naive_build:
+    label: A first in-house build (group sync, library-default checks, long-lived agent tokens)
+    kind: platform
+    set:
+      saml: { consume_signed_only: false, whole_nameid: false, reject_doctype: false, require_in_response_to: false, replay_cache: false, trusted_key_only: false, require_signature: false }
+      oidc: { use_pkce: false, check_state: false, check_iss_param: false, fixed_algs: false }
+      scim: { tenant_from_token: false, lenient_ops: false }
+      agents: { down_scope: false, ttl_s: 2592000, live_check: false }
+      stations: { idle_lock_s: 0, signature_needs_second_factor: false, check_workspace_role: false }
+      onboarding: { use_model: false }
+      provisioning: { honour_dates: false }
+  platform:
+    label: The identity plane
+    kind: platform
+  strict_scim:
+    label: Identity plane that rejects the IdPs' quirks (spec-strict SCIM)
+    kind: platform
+    set: { scim: { lenient_ops: false } }
+  name_decides:
+    label: Identity plane that applies the model's mapping without checking the members
+    kind: platform
+    set: { onboarding: { check_members: false } }
+  no_hr_dates:
+    label: Identity plane that ignores the start and end dates the IdP sends
+    kind: platform
+    set: { provisioning: { honour_dates: false } }
+  no_live_check:
+    label: Identity plane whose agent tokens are not re-checked on use
+    kind: platform
+    set: { agents: { live_check: false } }
+  no_down_scope:
+    label: Identity plane that gives agents the scopes they ask for
+    kind: platform
+    set: { agents: { down_scope: false } }
+  no_idle_lock:
+    label: Identity plane whose station sessions do not lock
+    kind: platform
+    set: { stations: { idle_lock_s: 0 } }
+  no_wrapping_defence:
+    label: Identity plane that reads the first assertion, signed or not
+    kind: platform
+    set: { saml: { consume_signed_only: false } }
+
+main: [status_quo, naive_build, platform]
+ablations: [strict_scim, name_decides, no_hr_dates, no_live_check, no_down_scope, no_idle_lock, no_wrapping_defence]

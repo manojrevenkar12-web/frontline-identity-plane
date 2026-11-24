@@ -1,0 +1,12 @@
+# Release gates for the identity plane, set from the development customers before the held-out run and never
+# loosened after it (AGENTS.md).
+platform:
+  attack_successes_max: 0
+  cross_tenant_max: 0
+  leaver_hours_after_idp_p95_max: 1.0        # hours from the IdP's deactivation to the last access path closed
+  over_privileged_vs_status_quo_max: 0.25     # person-hours with more access than HR intends, ratio to today
+  blocked_shift_starts_vs_status_quo_max: 0.25
+  legit_login_rejection_max: 0.005
+  wrong_auto_grants_max: 0
+  agent_overreach_vs_status_quo_max: 0.02      # assistant actions the person's IdP state did not allow, ratio to today
+  wrong_identity_signatures_max: 0

@@ -1,0 +1,53 @@
+# The identity plane's settings. Only src/fip/authz/, src/fip/onboarding.py, src/fip/protocols/ (as policies)
+# and src/fip/service/ read this file.
+
+saml:
+  require_signature: true
+  consume_signed_only: true      # read the assertion the signature covers; exactly one assertion
+  whole_nameid: true             # no comments inside NameID
+  reject_doctype: true
+  check_audience: true
+  check_recipient: true
+  check_time: true
+  max_skew_s: 180
+  require_in_response_to: true
+  replay_cache: true
+  bind_reference: true
+  trusted_key_only: true
+
+oidc:
+  use_pkce: true
+  check_state: true
+  check_iss_param: true          # RFC 9207, against mix-up between the IdPs of different tenants
+  fixed_algs: true
+  check_claims: true
+  max_skew_s: 120
+
+scim:
+  tenant_from_token: true
+  lenient_ops: true              # Entra's "Replace" and "False"
+  groups: true
+  strict_members: true
+
+agents:
+  down_scope: true
+  ttl_s: 600
+  live_check: true
+  audience_bound: true
+
+stations:
+  idle_lock_s: 300
+  max_session_s: 32400
+  signature_needs_second_factor: true
+  check_workspace_role: true
+
+onboarding:
+  use_model: true
+  min_confidence: 0.8
+  member_agreement: 0.95         # a real role group is almost all people of that department at that site
+  check_members: true
+  admin_minutes_per_queued_group: 9
+
+provisioning:
+  group_sync: true
+  honour_dates: true             # no access before the start date or after the end date the IdP sends
