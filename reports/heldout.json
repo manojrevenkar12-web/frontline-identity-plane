@@ -1,0 +1,1374 @@
+{
+ "split": "heldout",
+ "seeds": [
+  4101,
+  4102,
+  4103
+ ],
+ "designs": {
+  "status_quo": {
+   "people": 2760.0,
+   "over_privileged_h": 26117.3938,
+   "over_idp_h": 22493.2183,
+   "under_privileged_h": 4809.4586,
+   "leavers": 278.0,
+   "leaver_h_after_idp_p95": 0.6106,
+   "leaver_h_after_idp_mean": 0.2414,
+   "leaver_h_after_hr_p95": 37.6844,
+   "shift_starts": 78065.0,
+   "blocked_shift_starts": 135.0,
+   "tickets": 107.0,
+   "admin_hours_onboarding": 90.1666,
+   "admin_hours_per_week": 3.5667,
+   "lost_work_hours": 56.2501,
+   "groups": 0.0,
+   "groups_auto_mapped": 0.0,
+   "wrong_auto_grants": 0.0,
+   "agent_requests": 13336.0,
+   "agent_overreach": 3708.0,
+   "agent_overreach_idp": 3704.0,
+   "agent_refused_allowed": 2143.0,
+   "leaver_agent_actions": 2008.0,
+   "station_actions": 34020.0,
+   "wrong_identity_actions": 92.0,
+   "signatures": 34020.0,
+   "wrong_identity_signatures": 0.0,
+   "signatures_without_second_factor": 0.0,
+   "scim_changes_dropped": 0.0,
+   "attack_attempts": 189.0,
+   "attack_successes": 9.0,
+   "cross_tenant_successes": 0.0,
+   "attacks": {
+    "agent.scope_escalation": {
+     "attempts": 9,
+     "successes": 9
+    },
+    "agent.token_at_other_tenant": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.alg_none": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.expired": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.hmac_with_public_key": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.other_audience": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "oidc.code_injection": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "oidc.login_csrf": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "oidc.mix_up": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.comment_truncation": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.dtd": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.expired": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.key_in_message": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.other_tenants_idp": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.replay": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.signature_wrapping": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.unsigned": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.unsolicited_login_csrf": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.wrong_audience": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "scim.other_tenant_by_path": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "station.leaver_badge": {
+     "attempts": 9,
+     "successes": 0
+    }
+   },
+   "legit_logins": 480.0,
+   "legit_login_rejections": 0.0
+  },
+  "naive_build": {
+   "people": 2760.0,
+   "over_privileged_h": 112871.3214,
+   "over_idp_h": 107701.3178,
+   "under_privileged_h": 29076.0799,
+   "leavers": 278.0,
+   "leaver_h_after_idp_p95": 899.5596,
+   "leaver_h_after_idp_mean": 350.6886,
+   "leaver_h_after_hr_p95": 915.4006,
+   "shift_starts": 78065.0,
+   "blocked_shift_starts": 836.0,
+   "tickets": 0.0,
+   "admin_hours_onboarding": 40.95,
+   "admin_hours_per_week": 0.0,
+   "lost_work_hours": 0.0,
+   "groups": 0.0,
+   "groups_auto_mapped": 0.0,
+   "wrong_auto_grants": 0.0,
+   "agent_requests": 13336.0,
+   "agent_overreach": 3562.0,
+   "agent_overreach_idp": 3513.0,
+   "agent_refused_allowed": 1766.0,
+   "leaver_agent_actions": 1478.0,
+   "station_actions": 34020.0,
+   "wrong_identity_actions": 10067.0,
+   "signatures": 34020.0,
+   "wrong_identity_signatures": 4483.0,
+   "signatures_without_second_factor": 23351.0,
+   "scim_changes_dropped": 373.0,
+   "attack_attempts": 189.0,
+   "attack_successes": 114.0,
+   "cross_tenant_successes": 9.0,
+   "attacks": {
+    "agent.scope_escalation": {
+     "attempts": 9,
+     "successes": 6
+    },
+    "agent.token_at_other_tenant": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.alg_none": {
+     "attempts": 9,
+     "successes": 9
+    },
+    "jwt.expired": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.hmac_with_public_key": {
+     "attempts": 9,
+     "successes": 9
+    },
+    "jwt.other_audience": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "oidc.code_injection": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "oidc.login_csrf": {
+     "attempts": 9,
+     "successes": 9
+    },
+    "oidc.mix_up": {
+     "attempts": 9,
+     "successes": 9
+    },
+    "saml.comment_truncation": {
+     "attempts": 9,
+     "successes": 9
+    },
+    "saml.dtd": {
+     "attempts": 9,
+     "successes": 9
+    },
+    "saml.expired": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.key_in_message": {
+     "attempts": 9,
+     "successes": 9
+    },
+    "saml.other_tenants_idp": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.replay": {
+     "attempts": 9,
+     "successes": 9
+    },
+    "saml.signature_wrapping": {
+     "attempts": 9,
+     "successes": 9
+    },
+    "saml.unsigned": {
+     "attempts": 9,
+     "successes": 9
+    },
+    "saml.unsolicited_login_csrf": {
+     "attempts": 9,
+     "successes": 9
+    },
+    "saml.wrong_audience": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "scim.other_tenant_by_path": {
+     "attempts": 9,
+     "successes": 9
+    },
+    "station.leaver_badge": {
+     "attempts": 9,
+     "successes": 0
+    }
+   },
+   "legit_logins": 480.0,
+   "legit_login_rejections": 0.0
+  },
+  "platform": {
+   "people": 2760.0,
+   "over_privileged_h": 2070.2469,
+   "over_idp_h": 32.0786,
+   "under_privileged_h": 345.0499,
+   "leavers": 278.0,
+   "leaver_h_after_idp_p95": 0.375,
+   "leaver_h_after_idp_mean": 0.0771,
+   "leaver_h_after_hr_p95": 21.2158,
+   "shift_starts": 78065.0,
+   "blocked_shift_starts": 13.0,
+   "tickets": 0.0,
+   "admin_hours_onboarding": 34.95,
+   "admin_hours_per_week": 0.0,
+   "lost_work_hours": 0.0,
+   "groups": 273.0,
+   "groups_auto_mapped": 40.0,
+   "wrong_auto_grants": 2.0,
+   "agent_requests": 13336.0,
+   "agent_overreach": 25.0,
+   "agent_overreach_idp": 0.0,
+   "agent_refused_allowed": 1757.0,
+   "leaver_agent_actions": 25.0,
+   "station_actions": 34020.0,
+   "wrong_identity_actions": 91.0,
+   "signatures": 34020.0,
+   "wrong_identity_signatures": 0.0,
+   "signatures_without_second_factor": 0.0,
+   "scim_changes_dropped": 0.0,
+   "attack_attempts": 189.0,
+   "attack_successes": 0.0,
+   "cross_tenant_successes": 0.0,
+   "attacks": {
+    "agent.scope_escalation": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "agent.token_at_other_tenant": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.alg_none": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.expired": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.hmac_with_public_key": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.other_audience": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "oidc.code_injection": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "oidc.login_csrf": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "oidc.mix_up": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.comment_truncation": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.dtd": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.expired": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.key_in_message": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.other_tenants_idp": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.replay": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.signature_wrapping": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.unsigned": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.unsolicited_login_csrf": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.wrong_audience": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "scim.other_tenant_by_path": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "station.leaver_badge": {
+     "attempts": 9,
+     "successes": 0
+    }
+   },
+   "legit_logins": 480.0,
+   "legit_login_rejections": 0.0
+  },
+  "strict_scim": {
+   "people": 2760.0,
+   "over_privileged_h": 52256.4553,
+   "over_idp_h": 50334.3473,
+   "under_privileged_h": 29076.0799,
+   "leavers": 278.0,
+   "leaver_h_after_idp_p95": 837.5888,
+   "leaver_h_after_idp_mean": 145.9843,
+   "leaver_h_after_hr_p95": 850.4056,
+   "shift_starts": 78065.0,
+   "blocked_shift_starts": 836.0,
+   "tickets": 0.0,
+   "admin_hours_onboarding": 34.95,
+   "admin_hours_per_week": 0.0,
+   "lost_work_hours": 0.0,
+   "groups": 273.0,
+   "groups_auto_mapped": 40.0,
+   "wrong_auto_grants": 2.0,
+   "agent_requests": 13336.0,
+   "agent_overreach": 24.0,
+   "agent_overreach_idp": 0.0,
+   "agent_refused_allowed": 1858.0,
+   "leaver_agent_actions": 24.0,
+   "station_actions": 34020.0,
+   "wrong_identity_actions": 91.0,
+   "signatures": 34020.0,
+   "wrong_identity_signatures": 0.0,
+   "signatures_without_second_factor": 0.0,
+   "scim_changes_dropped": 373.0,
+   "attack_attempts": 189.0,
+   "attack_successes": 0.0,
+   "cross_tenant_successes": 0.0,
+   "attacks": {
+    "agent.scope_escalation": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "agent.token_at_other_tenant": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.alg_none": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.expired": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.hmac_with_public_key": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.other_audience": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "oidc.code_injection": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "oidc.login_csrf": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "oidc.mix_up": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.comment_truncation": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.dtd": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.expired": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.key_in_message": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.other_tenants_idp": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.replay": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.signature_wrapping": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.unsigned": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.unsolicited_login_csrf": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.wrong_audience": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "scim.other_tenant_by_path": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "station.leaver_badge": {
+     "attempts": 9,
+     "successes": 0
+    }
+   },
+   "legit_logins": 480.0,
+   "legit_login_rejections": 0.0
+  },
+  "name_decides": {
+   "people": 2760.0,
+   "over_privileged_h": 629389.0858,
+   "over_idp_h": 627962.8135,
+   "under_privileged_h": 1525.2684,
+   "leavers": 278.0,
+   "leaver_h_after_idp_p95": 0.375,
+   "leaver_h_after_idp_mean": 0.0771,
+   "leaver_h_after_hr_p95": 21.2158,
+   "shift_starts": 78065.0,
+   "blocked_shift_starts": 49.0,
+   "tickets": 0.0,
+   "admin_hours_onboarding": 30.9,
+   "admin_hours_per_week": 0.0,
+   "lost_work_hours": 0.0,
+   "groups": 273.0,
+   "groups_auto_mapped": 67.0,
+   "wrong_auto_grants": 23.0,
+   "agent_requests": 13336.0,
+   "agent_overreach": 156.0,
+   "agent_overreach_idp": 131.0,
+   "agent_refused_allowed": 1757.0,
+   "leaver_agent_actions": 28.0,
+   "station_actions": 34020.0,
+   "wrong_identity_actions": 91.0,
+   "signatures": 34020.0,
+   "wrong_identity_signatures": 0.0,
+   "signatures_without_second_factor": 0.0,
+   "scim_changes_dropped": 0.0,
+   "attack_attempts": 189.0,
+   "attack_successes": 0.0,
+   "cross_tenant_successes": 0.0,
+   "attacks": {
+    "agent.scope_escalation": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "agent.token_at_other_tenant": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.alg_none": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.expired": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.hmac_with_public_key": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.other_audience": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "oidc.code_injection": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "oidc.login_csrf": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "oidc.mix_up": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.comment_truncation": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.dtd": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.expired": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.key_in_message": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.other_tenants_idp": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.replay": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.signature_wrapping": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.unsigned": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.unsolicited_login_csrf": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.wrong_audience": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "scim.other_tenant_by_path": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "station.leaver_badge": {
+     "attempts": 9,
+     "successes": 0
+    }
+   },
+   "legit_logins": 480.0,
+   "legit_login_rejections": 0.0
+  },
+  "no_hr_dates": {
+   "people": 2760.0,
+   "over_privileged_h": 6830.3746,
+   "over_idp_h": 77.7993,
+   "under_privileged_h": 345.0499,
+   "leavers": 278.0,
+   "leaver_h_after_idp_p95": 0.6106,
+   "leaver_h_after_idp_mean": 0.2414,
+   "leaver_h_after_hr_p95": 37.6844,
+   "shift_starts": 78065.0,
+   "blocked_shift_starts": 13.0,
+   "tickets": 0.0,
+   "admin_hours_onboarding": 34.95,
+   "admin_hours_per_week": 0.0,
+   "lost_work_hours": 0.0,
+   "groups": 273.0,
+   "groups_auto_mapped": 40.0,
+   "wrong_auto_grants": 2.0,
+   "agent_requests": 13336.0,
+   "agent_overreach": 49.0,
+   "agent_overreach_idp": 0.0,
+   "agent_refused_allowed": 1757.0,
+   "leaver_agent_actions": 49.0,
+   "station_actions": 34020.0,
+   "wrong_identity_actions": 91.0,
+   "signatures": 34020.0,
+   "wrong_identity_signatures": 0.0,
+   "signatures_without_second_factor": 0.0,
+   "scim_changes_dropped": 0.0,
+   "attack_attempts": 189.0,
+   "attack_successes": 0.0,
+   "cross_tenant_successes": 0.0,
+   "attacks": {
+    "agent.scope_escalation": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "agent.token_at_other_tenant": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.alg_none": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.expired": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.hmac_with_public_key": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.other_audience": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "oidc.code_injection": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "oidc.login_csrf": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "oidc.mix_up": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.comment_truncation": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.dtd": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.expired": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.key_in_message": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.other_tenants_idp": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.replay": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.signature_wrapping": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.unsigned": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.unsolicited_login_csrf": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.wrong_audience": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "scim.other_tenant_by_path": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "station.leaver_badge": {
+     "attempts": 9,
+     "successes": 0
+    }
+   },
+   "legit_logins": 480.0,
+   "legit_login_rejections": 0.0
+  },
+  "no_live_check": {
+   "people": 2760.0,
+   "over_privileged_h": 2070.2469,
+   "over_idp_h": 32.0786,
+   "under_privileged_h": 345.0499,
+   "leavers": 278.0,
+   "leaver_h_after_idp_p95": 0.375,
+   "leaver_h_after_idp_mean": 0.0771,
+   "leaver_h_after_hr_p95": 21.2158,
+   "shift_starts": 78065.0,
+   "blocked_shift_starts": 13.0,
+   "tickets": 0.0,
+   "admin_hours_onboarding": 34.95,
+   "admin_hours_per_week": 0.0,
+   "lost_work_hours": 0.0,
+   "groups": 273.0,
+   "groups_auto_mapped": 40.0,
+   "wrong_auto_grants": 2.0,
+   "agent_requests": 13336.0,
+   "agent_overreach": 25.0,
+   "agent_overreach_idp": 0.0,
+   "agent_refused_allowed": 1757.0,
+   "leaver_agent_actions": 25.0,
+   "station_actions": 34020.0,
+   "wrong_identity_actions": 91.0,
+   "signatures": 34020.0,
+   "wrong_identity_signatures": 0.0,
+   "signatures_without_second_factor": 0.0,
+   "scim_changes_dropped": 0.0,
+   "attack_attempts": 189.0,
+   "attack_successes": 0.0,
+   "cross_tenant_successes": 0.0,
+   "attacks": {
+    "agent.scope_escalation": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "agent.token_at_other_tenant": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.alg_none": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.expired": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.hmac_with_public_key": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.other_audience": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "oidc.code_injection": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "oidc.login_csrf": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "oidc.mix_up": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.comment_truncation": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.dtd": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.expired": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.key_in_message": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.other_tenants_idp": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.replay": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.signature_wrapping": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.unsigned": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.unsolicited_login_csrf": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.wrong_audience": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "scim.other_tenant_by_path": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "station.leaver_badge": {
+     "attempts": 9,
+     "successes": 0
+    }
+   },
+   "legit_logins": 480.0,
+   "legit_login_rejections": 0.0
+  },
+  "no_down_scope": {
+   "people": 2760.0,
+   "over_privileged_h": 2070.2469,
+   "over_idp_h": 32.0786,
+   "under_privileged_h": 345.0499,
+   "leavers": 278.0,
+   "leaver_h_after_idp_p95": 0.375,
+   "leaver_h_after_idp_mean": 0.0771,
+   "leaver_h_after_hr_p95": 21.2158,
+   "shift_starts": 78065.0,
+   "blocked_shift_starts": 13.0,
+   "tickets": 0.0,
+   "admin_hours_onboarding": 34.95,
+   "admin_hours_per_week": 0.0,
+   "lost_work_hours": 0.0,
+   "groups": 273.0,
+   "groups_auto_mapped": 40.0,
+   "wrong_auto_grants": 2.0,
+   "agent_requests": 13336.0,
+   "agent_overreach": 25.0,
+   "agent_overreach_idp": 0.0,
+   "agent_refused_allowed": 1757.0,
+   "leaver_agent_actions": 25.0,
+   "station_actions": 34020.0,
+   "wrong_identity_actions": 91.0,
+   "signatures": 34020.0,
+   "wrong_identity_signatures": 0.0,
+   "signatures_without_second_factor": 0.0,
+   "scim_changes_dropped": 0.0,
+   "attack_attempts": 189.0,
+   "attack_successes": 0.0,
+   "cross_tenant_successes": 0.0,
+   "attacks": {
+    "agent.scope_escalation": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "agent.token_at_other_tenant": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.alg_none": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.expired": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.hmac_with_public_key": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.other_audience": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "oidc.code_injection": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "oidc.login_csrf": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "oidc.mix_up": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.comment_truncation": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.dtd": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.expired": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.key_in_message": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.other_tenants_idp": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.replay": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.signature_wrapping": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.unsigned": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.unsolicited_login_csrf": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.wrong_audience": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "scim.other_tenant_by_path": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "station.leaver_badge": {
+     "attempts": 9,
+     "successes": 0
+    }
+   },
+   "legit_logins": 480.0,
+   "legit_login_rejections": 0.0
+  },
+  "no_idle_lock": {
+   "people": 2760.0,
+   "over_privileged_h": 2070.2469,
+   "over_idp_h": 32.0786,
+   "under_privileged_h": 345.0499,
+   "leavers": 278.0,
+   "leaver_h_after_idp_p95": 0.375,
+   "leaver_h_after_idp_mean": 0.0771,
+   "leaver_h_after_hr_p95": 21.2158,
+   "shift_starts": 78065.0,
+   "blocked_shift_starts": 13.0,
+   "tickets": 0.0,
+   "admin_hours_onboarding": 34.95,
+   "admin_hours_per_week": 0.0,
+   "lost_work_hours": 0.0,
+   "groups": 273.0,
+   "groups_auto_mapped": 40.0,
+   "wrong_auto_grants": 2.0,
+   "agent_requests": 13336.0,
+   "agent_overreach": 25.0,
+   "agent_overreach_idp": 0.0,
+   "agent_refused_allowed": 1757.0,
+   "leaver_agent_actions": 25.0,
+   "station_actions": 34020.0,
+   "wrong_identity_actions": 10150.0,
+   "signatures": 34020.0,
+   "wrong_identity_signatures": 0.0,
+   "signatures_without_second_factor": 0.0,
+   "scim_changes_dropped": 0.0,
+   "attack_attempts": 189.0,
+   "attack_successes": 0.0,
+   "cross_tenant_successes": 0.0,
+   "attacks": {
+    "agent.scope_escalation": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "agent.token_at_other_tenant": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.alg_none": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.expired": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.hmac_with_public_key": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.other_audience": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "oidc.code_injection": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "oidc.login_csrf": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "oidc.mix_up": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.comment_truncation": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.dtd": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.expired": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.key_in_message": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.other_tenants_idp": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.replay": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.signature_wrapping": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.unsigned": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.unsolicited_login_csrf": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.wrong_audience": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "scim.other_tenant_by_path": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "station.leaver_badge": {
+     "attempts": 9,
+     "successes": 0
+    }
+   },
+   "legit_logins": 480.0,
+   "legit_login_rejections": 0.0
+  },
+  "no_wrapping_defence": {
+   "people": 2760.0,
+   "over_privileged_h": 2070.2469,
+   "over_idp_h": 32.0786,
+   "under_privileged_h": 345.0499,
+   "leavers": 278.0,
+   "leaver_h_after_idp_p95": 0.375,
+   "leaver_h_after_idp_mean": 0.0771,
+   "leaver_h_after_hr_p95": 21.2158,
+   "shift_starts": 78065.0,
+   "blocked_shift_starts": 13.0,
+   "tickets": 0.0,
+   "admin_hours_onboarding": 34.95,
+   "admin_hours_per_week": 0.0,
+   "lost_work_hours": 0.0,
+   "groups": 273.0,
+   "groups_auto_mapped": 40.0,
+   "wrong_auto_grants": 2.0,
+   "agent_requests": 13336.0,
+   "agent_overreach": 25.0,
+   "agent_overreach_idp": 0.0,
+   "agent_refused_allowed": 1757.0,
+   "leaver_agent_actions": 25.0,
+   "station_actions": 34020.0,
+   "wrong_identity_actions": 91.0,
+   "signatures": 34020.0,
+   "wrong_identity_signatures": 0.0,
+   "signatures_without_second_factor": 0.0,
+   "scim_changes_dropped": 0.0,
+   "attack_attempts": 189.0,
+   "attack_successes": 9.0,
+   "cross_tenant_successes": 0.0,
+   "attacks": {
+    "agent.scope_escalation": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "agent.token_at_other_tenant": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.alg_none": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.expired": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.hmac_with_public_key": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "jwt.other_audience": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "oidc.code_injection": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "oidc.login_csrf": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "oidc.mix_up": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.comment_truncation": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.dtd": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.expired": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.key_in_message": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.other_tenants_idp": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.replay": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.signature_wrapping": {
+     "attempts": 9,
+     "successes": 9
+    },
+    "saml.unsigned": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.unsolicited_login_csrf": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "saml.wrong_audience": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "scim.other_tenant_by_path": {
+     "attempts": 9,
+     "successes": 0
+    },
+    "station.leaver_badge": {
+     "attempts": 9,
+     "successes": 0
+    }
+   },
+   "legit_logins": 480.0,
+   "legit_login_rejections": 0.0
+  }
+ },
+ "labels": {
+  "status_quo": "Provisioning as documented today (users-only SCIM, Viewer on first login, roles by ticket, a standing API key for automations)",
+  "naive_build": "A first in-house build (group sync, library-default checks, long-lived agent tokens)",
+  "platform": "The identity plane",
+  "strict_scim": "Identity plane that rejects the IdPs' quirks (spec-strict SCIM)",
+  "name_decides": "Identity plane that applies the model's mapping without checking the members",
+  "no_hr_dates": "Identity plane that ignores the start and end dates the IdP sends",
+  "no_live_check": "Identity plane whose agent tokens are not re-checked on use",
+  "no_down_scope": "Identity plane that gives agents the scopes they ask for",
+  "no_idle_lock": "Identity plane whose station sessions do not lock",
+  "no_wrapping_defence": "Identity plane that reads the first assertion, signed or not"
+ },
+ "main": [
+  "status_quo",
+  "naive_build",
+  "platform"
+ ],
+ "ablations": [
+  "strict_scim",
+  "name_decides",
+  "no_hr_dates",
+  "no_live_check",
+  "no_down_scope",
+  "no_idle_lock",
+  "no_wrapping_defence"
+ ],
+ "site": {
+  "tenants": 12,
+  "plants": 21,
+  "people": 2760,
+  "weeks": 6,
+  "hr_changes": 403,
+  "idps": [
+   "adfs",
+   "entra",
+   "okta",
+   "ping"
+  ]
+ },
+ "per_seed": [
+  {
+   "seed": 4101,
+   "status_quo": {
+    "over_privileged_h": 14504.5847,
+    "attack_successes": 3
+   },
+   "naive_build": {
+    "over_privileged_h": 39975.0836,
+    "attack_successes": 38
+   },
+   "platform": {
+    "over_privileged_h": 511.7993,
+    "attack_successes": 0
+   }
+  },
+  {
+   "seed": 4102,
+   "status_quo": {
+    "over_privileged_h": 4890.1537,
+    "attack_successes": 3
+   },
+   "naive_build": {
+    "over_privileged_h": 41208.0299,
+    "attack_successes": 38
+   },
+   "platform": {
+    "over_privileged_h": 896.5879,
+    "attack_successes": 0
+   }
+  },
+  {
+   "seed": 4103,
+   "status_quo": {
+    "over_privileged_h": 6722.6554,
+    "attack_successes": 3
+   },
+   "naive_build": {
+    "over_privileged_h": 31688.2079,
+    "attack_successes": 38
+   },
+   "platform": {
+    "over_privileged_h": 661.8597,
+    "attack_successes": 0
+   }
+  }
+ ],
+ "gates": {
+  "platform": [
+   {
+    "gate": "Attacks that got in",
+    "value": 0.0,
+    "limit": 0,
+    "kind": "max",
+    "pass": true
+   },
+   {
+    "gate": "Cross-tenant access",
+    "value": 0.0,
+    "limit": 0,
+    "kind": "max",
+    "pass": true
+   },
+   {
+    "gate": "Hours from IdP deactivation to the last access path closed, p95",
+    "value": 0.375,
+    "limit": 1.0,
+    "kind": "max",
+    "pass": true
+   },
+   {
+    "gate": "Over-privileged person-hours, ratio to today",
+    "value": 0.0793,
+    "limit": 0.25,
+    "kind": "max",
+    "pass": true
+   },
+   {
+    "gate": "Blocked shift starts, ratio to today",
+    "value": 0.0963,
+    "limit": 0.25,
+    "kind": "max",
+    "pass": true
+   },
+   {
+    "gate": "Legitimate logins turned away, share",
+    "value": 0.0,
+    "limit": 0.005,
+    "kind": "max",
+    "pass": true
+   },
+   {
+    "gate": "Wrong grants applied from the model's mapping",
+    "value": 2.0,
+    "limit": 0,
+    "kind": "max",
+    "pass": false
+   },
+   {
+    "gate": "AI-assistant actions the IdP did not allow, ratio to today",
+    "value": 0.0,
+    "limit": 0.02,
+    "kind": "max",
+    "pass": true
+   },
+   {
+    "gate": "Signatures recorded under someone else's identity",
+    "value": 0.0,
+    "limit": 0,
+    "kind": "max",
+    "pass": true
+   }
+  ],
+  "platform_pass": false
+ }
+}
